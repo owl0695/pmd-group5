@@ -1,4 +1,6 @@
 # PMD - source code analyzer
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=owl0695_pmd-group5)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=owl0695_pmd-group5&metric=bugs)](https://sonarcloud.io/summary/new_code?id=owl0695_pmd-group5)
 
 ![PMD Logo](https://raw.githubusercontent.com/pmd/pmd/pmd/7.0.x/docs/images/logo/pmd-logo-300px.png)
 
