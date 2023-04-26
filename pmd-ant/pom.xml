@@ -77,5 +77,11 @@
             <artifactId>system-lambda</artifactId>
             <scope>test</scope>
         </dependency>
+    
+      <dependency>
+        <groupId>org.openrewrite</groupId>
+        <artifactId>rewrite-gradle</artifactId>
+        <version>7.16.3</version>
+      </dependency>
     </dependencies>
 </project>

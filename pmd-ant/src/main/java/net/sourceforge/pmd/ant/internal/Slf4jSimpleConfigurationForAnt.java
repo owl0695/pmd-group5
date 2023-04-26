@@ -15,6 +15,7 @@ import org.apache.tools.ant.DefaultLogger;
 import org.apache.tools.ant.Project;
 import org.apache.tools.ant.XmlLogger;
 import org.apache.tools.ant.taskdefs.RecorderEntry;
+import org.gradle.api.internal.project.ant.AntLoggingAdapter;
 import org.slf4j.event.Level;
 
 import net.sourceforge.pmd.internal.Slf4jSimpleConfiguration;
@@ -118,7 +119,7 @@ public final class Slf4jSimpleConfigurationForAnt {
                     declaredField = XmlLogger.class.getDeclaredField("msgOutputLevel");
                 } else if (l instanceof RecorderEntry) {
                     declaredField = RecorderEntry.class.getDeclaredField("loglevel");
-                } else if ("org.gradle.api.internal.project.ant.AntLoggingAdapter".equals(l.getClass().getName())) {
+                } else if (l instanceof AntLoggingAdapter) {
                     return determineGradleLogLevel(project, l);
                 } else {
                     try {
