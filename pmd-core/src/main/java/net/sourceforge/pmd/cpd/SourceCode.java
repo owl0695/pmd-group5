@@ -81,7 +81,6 @@ public class SourceCode {
 
                 // Skip lines until we reach the start point
                 for (int i = 0; i < startLine - 1; i++) {
-                    // reader.readLine();
                     reader.readLine();
                 }
 
