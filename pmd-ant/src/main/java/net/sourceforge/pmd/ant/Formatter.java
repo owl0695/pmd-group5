@@ -168,9 +168,12 @@ public class Formatter {
         }
 
         Properties properties = createProperties();
-        Renderer renderer = RendererFactory.createRenderer(type, properties);
-        renderer.setShowSuppressedViolations(showSuppressed);
-        return renderer;
+//         Renderer renderer = RendererFactory.createRenderer(type, properties);
+//         renderer.setShowSuppressedViolations(showSuppressed);
+//         return renderer;
+        Renderer newRenderer = RendererFactory.createRenderer(type, properties);
+        newRenderer.setShowSuppressedViolations(showSuppressed);
+        return newRenderer;
     }
 
     private Properties createProperties() {
