@@ -389,7 +389,7 @@ public final class PmdAnalysis implements AutoCloseable {
             } catch (Exception e) {
                 reporter.errorEx("Exception while closing analysis listeners", e);
                 // todo better exception
-                throw new RuntimeException("Exception while closing analysis listeners", e);
+                // No need to throw a new RuntimeException here
             }
         }
     }
